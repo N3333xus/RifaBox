@@ -1,0 +1,6 @@
+@RifaBox.API_HostAddress = http://localhost:5144
+
+GET {{RifaBox.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

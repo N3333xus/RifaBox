@@ -1,5 +1,5 @@
 // using Microsoft.AspNetCore.Identity;
-
+// VER APLICAÇÃO DE IDENTITY PARA  O PROJETO
 namespace RifaBox.Domain.Entities;
 
 public class User // : IdentityUser<Guid> // representa pessoas no sistema, com papeis diferentes
@@ -8,7 +8,7 @@ public class User // : IdentityUser<Guid> // representa pessoas no sistema, com 
     public string Name { get; set; }
     public string Email { get; set; }
     public string PasswordHash { get; set; }
-    public int Role { get; set; } // identity
+    public int Role { get; set; } // ADMIN, MODERADOR, organizadorSorteio, ParticipanteSorteio
 
     private User() { }
 

@@ -11,7 +11,7 @@ namespace RifaBox.Domain.Entities
     {
         public Guid Id { get; set; }
         public string Description { get; set; }
-        public string RaffleImages { get; set; }
+        public string RaffleImages { get; set; } // caminho p imagem da rifa
         public decimal TicketPrices { get; set; }
         public decimal TotalTickets { get; set; } // ou sem limite
         public decimal DrawRate { get; set; }

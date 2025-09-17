@@ -11,7 +11,7 @@ namespace RifaBox.Domain.Entities
         public Guid Id { get; set; }
         public int Number { get; set; }
         public int RaffleId { get; set; } // fk para raffle, ou usar guid??
-        public ETicketStatus Status { get; set; } // available, held, sold, canceled
+        public ETicketStatus Status { get; set; }
         public int OwnerId { get; set; } // fk para USUARIO COMPRADOR, pode ser nulo?
         public int Version { get; set; }
 

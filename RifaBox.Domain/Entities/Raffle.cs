@@ -11,12 +11,12 @@ namespace RifaBox.Domain.Entities
     {
         public Guid Id { get; set; }
         public string Description { get; set; }
-        public string RaffleImages { get; set; } // caminho p imagem da rifa
+        public string RaffleImages { get; set; } // caminho p imagem da rifa, usar lista de string,? ver melhor essa questão
         public decimal TicketPrices { get; set; }
-        public decimal TotalTickets { get; set; } // ou sem limite
+        public int? TotalTickets { get; set; } // pode ser nulo para ilimitado
         public decimal DrawRate { get; set; }
-        public ERaffleStatus RaffleStatus { get; set; }
-        public int SeedHash { get; set; }
+        public ERaffleStatus RaffleStatus { get; set; } // draft, active, closed, drawn
+        public string SeedHash { get; set; }
         public DateTime CreatedAt { get; set; }
 
         /*

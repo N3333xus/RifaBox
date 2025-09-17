@@ -8,10 +8,10 @@ namespace RifaBox.Domain.Entities
     public class Draw // armazena informações do sorteio de uma rifa
     {
         public Guid Id { get; set; }
-        public int RaffleId { get; set; }
+        public int RaffleId { get; set; } // ou guid?
         public string Seed { get; set; }
         public string Algorithm { get; set; }
-        public string Winners { get; set; } // lista com fk??
+        public string Winners { get; set; } // lista com guid fk??
         public DateTime CreatedAt { get; set; }
     }
 }

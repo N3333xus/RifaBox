@@ -1,10 +1,9 @@
-namespace RifaBox.Domain.Enums
+namespace RifaBox.Domain.Enums;
+
+public enum ETicketStatus
 {
-    public enum ETicketStatus
-    {
-        AVAILABLE,
-        HELD,
-        SOLD,
-        CANCELED
-    }
+    DISPONIVEL,
+    MANTIDA,
+    VENDIDA,
+    CANCELADA
 }

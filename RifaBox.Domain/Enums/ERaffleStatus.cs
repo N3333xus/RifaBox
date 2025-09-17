@@ -1,8 +1,8 @@
-namespace RifaBox.Domain.Enums
+namespace RifaBox.Domain.Enums;
+
+public enum ERaffleStatus
 {
-    public enum ERaffleStatus
-    {
-        ATIVADA,
-        FINALIZADA
-    }
+    RASCUNHO,
+    ATIVA,
+    FINALIZADA
 }

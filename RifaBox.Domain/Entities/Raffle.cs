@@ -15,7 +15,7 @@ namespace RifaBox.Domain.Entities
         public decimal TicketPrices { get; set; }
         public int? TotalTickets { get; set; } // pode ser nulo para ilimitado
         public decimal DrawRate { get; set; }
-        public ERaffleStatus RaffleStatus { get; set; } // draft, active, closed, drawn
+        public ERaffleStatus RaffleStatus { get; set; }
         public string SeedHash { get; set; }
         public DateTime CreatedAt { get; set; }
 

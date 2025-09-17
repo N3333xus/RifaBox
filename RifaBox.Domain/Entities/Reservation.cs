@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using RifaBox.Domain.Enums;
 
 namespace RifaBox.Domain.Entities
 {
@@ -11,7 +12,7 @@ namespace RifaBox.Domain.Entities
         public int UserId { get; set; }
         public int TicketIds { get; set; } // vai virar lista, com guid?
         public DateTime ExpiresAt { get; set; }
-        public string Status { get; set; } // vai virar enum: pending, expired, confirmed
+        public EReservationStatus Status { get; set; }
         public DateTime CreatedAt { get; set; }
         public bool IsConfirmed { get; set; } // p simular pagamento
         public DateTime? ConfirmedAt { get; set; }

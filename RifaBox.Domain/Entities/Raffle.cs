@@ -7,7 +7,7 @@ using RifaBox.Domain.Enums;
 
 namespace RifaBox.Domain.Entities
 {
-    public class Raffle // é a raiz do agregate, controla bilhetes, reservas e sorteios
+    public class Raffle // o evento
     {
         public Guid Id { get; set; }
         public string Description { get; set; }

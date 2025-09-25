@@ -5,7 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-
+/* 
+Controller de autenticação
+ENDPOINTS
+    POST /api/auth/register - Registrar usuário
+    POST /api/auth/login - Login e obter token jwt
+    GET /api/auth/me - Obter info usuário atual
+*/
 namespace RifaBox.API.Controllers
 {
     [Route("[controller]")]

@@ -10,6 +10,7 @@ RifaBox is a RESTful API for selling and drawing raffle tickets.
 - `Microsoft.AspNetCore.Identity.EntityFrameworkCore` -- Version: 8.0.19
 - `Npgsql.EntityFrameworkCore.PostgreSQL` -- Version: 9.0.4
 - `Microsoft.EntityFrameworkCore.Design` -- Version: 9.0.8
+- `Microsoft.AspNetCore.Authentication.JwtBearer` -- Version: 8.0.19
 
 
 ## Installation

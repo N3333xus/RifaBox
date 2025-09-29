@@ -1,37 +1,46 @@
-// using Microsoft.AspNetCore.Identity;
-// VER APLICAÇÃO DE IDENTITY PARA  O PROJETO
 namespace RifaBox.Domain.Entities;
 
-public class User // : IdentityUser<Guid> // representa pessoas no sistema, com papeis diferentes
+public class User
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
     public string Email { get; set; }
-    public string PasswordHash { get; set; }
+    //public string PasswordHash { get; set; }
     public int Role { get; set; } // ADMIN, MODERADOR, organizadorSorteio, ParticipanteSorteio
+    public DateTime CreatedAt { get; set; }
+    public bool IsActive { get; set; }
 
     private User() { }
 
-    public User(string name, string email, string passwordHash)
+    public User(string name, string email/*, string passwordHash*/)
     {
         Id = Guid.NewGuid();
         Name = name;
         Email = email;
-        PasswordHash = passwordHash;
+        //PasswordHash = passwordHash;
+        IsActive = true;
+        CreatedAt = DateTime.UtcNow;
 
     }
 
-    public void AlterarSenha(string newPasswordHash)
+    /*public void UpdatePassword(string newPasswordHash)
     {
         PasswordHash = newPasswordHash;
-    }
+    }*/
 
-    public void AtualizarPerfil(string newName, string newEmail)
+    public void UpdateProfile(string newName, string newEmail)
     {
         Name = newName;
         Email = newEmail;
     }
 
-    // DesativarConta
-    // AtivarConta       
+    public void DeactivateAcount()
+    {
+        IsActive = false;
+    }
+
+    public void ActivateAccount()
+    {
+        IsActive = true;
+    }    
 }

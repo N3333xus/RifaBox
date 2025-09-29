@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using RifaBox.Infra.Identity;
 
 namespace RifaBox.Infra.DataBase;
 
-public class RifaBoxDbContext : IdentityDbContext<IdentityUser>
+public class RifaBoxDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
 {
     public RifaBoxDbContext(DbContextOptions<RifaBoxDbContext> options) :
         base(options)

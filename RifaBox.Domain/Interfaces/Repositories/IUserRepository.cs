@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-
-namespace RifaBox.Infra.DataBase.Repositories
+namespace RifaBox.Domain.Interfaces.Repositories
 {
-    public class DrawRepository : iCategory
+    public interface IUserRepository
     {
-
+        
     }
 }

@@ -9,5 +9,9 @@
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RifaBox.Application\RifaBox.Application.csproj" />
+    <!-- <ProjectReference Include="..\RifaBox.Infra\RifaBox.Infra.csproj" /> -->
+  </ItemGroup>
 
 </Project>

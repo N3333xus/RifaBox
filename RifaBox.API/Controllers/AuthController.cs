@@ -7,8 +7,8 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-using RifaBox.Domain.Entities;
-using RifaBox.Infra.DataBase.Repositories;
+//using RifaBox.Domain.Entities;
+//using RifaBox.Infra.DataBase.Repositories;
 
 namespace RifaBox.API.Controllers
 {
@@ -17,7 +17,7 @@ namespace RifaBox.API.Controllers
     public class AuthController : ControllerBase
     {
 
-        [HttpPost("register")] // POST /api/auth/register - Registrar usuário
+        /*[HttpPost("register")] // POST /api/auth/register - Registrar usuário
         public async Task<IActionResult> Register([FromBody] RegisterDTO registerDto)
         {
 
@@ -38,6 +38,6 @@ namespace RifaBox.API.Controllers
         pivate string JwtTokenGenerator(User user)
         {
             // lógica para geração de token
-        }
+        }*/
     }
 }

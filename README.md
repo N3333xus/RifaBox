@@ -1,6 +1,6 @@
 # RifaBox (em desenvolvimento)
 
-English README Version
+> [English README Version](/README-en-us.md)
 
 RifaBox é uma API RESTful para venda e sorteio de rifas.
 

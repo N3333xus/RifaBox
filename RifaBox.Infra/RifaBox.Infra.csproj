@@ -17,7 +17,7 @@
   
   <ItemGroup>
     <ProjectReference Include="..\RifaBox.Domain\RifaBox.Domain.csproj" />
-    <!-- <ProjectReference Include="..\RifaBox.Application\RifaBox.Application.csproj" /> -->
+    <ProjectReference Include="..\RifaBox.Application\RifaBox.Application.csproj" />
   </ItemGroup>
 
 </Project>

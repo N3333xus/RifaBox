@@ -12,7 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RifaBox.Application\RifaBox.Application.csproj" />
-    <ProjectReference Include="..\RifaBox.Infra\RifaBox.Infra.csproj" />
+    <!--<ProjectReference Include="..\RifaBox.Infra\RifaBox.Infra.csproj" /> -->
   </ItemGroup>
 
 </Project>

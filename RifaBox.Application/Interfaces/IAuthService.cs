@@ -7,6 +7,11 @@ namespace RifaBox.Application.Interfaces
 {
     public interface IAuthService
     {
-        
+        /*
+        login
+        register
+        refreshtoken
+        revoketoken
+        */
     }
 }

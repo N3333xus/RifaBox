@@ -1,14 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using RifaBox.Application.DTOs.Auth;
 
 namespace RifaBox.Application.Interfaces
 {
     public interface IJwtTokenService
     {
-        //public string GenerateToken(IdentityUser, identityUser, IEnumerable<string> roler);
+        public string GenerateToken(AuthResultDto user, IEnumerable<string> roles);
         public string GenerateRefreshToken();
         public string ValidateToken(string token);
+
+        // refreshtokenasync
+        //revoketokenascyn
     }
 }

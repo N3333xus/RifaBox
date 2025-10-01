@@ -13,5 +13,12 @@ namespace RifaBox.Domain.Entities
         public string Algorithm { get; set; }
         public string Winners { get; set; } // lista com guid fk??
         public DateTime CreatedAt { get; set; }
+
+        /*
+        
+        executar sorteio
+        registarvencedor
+        validarresultado
+        */
     }
 }

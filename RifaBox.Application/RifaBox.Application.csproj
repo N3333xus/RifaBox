@@ -8,7 +8,7 @@
   
   <ItemGroup>
     <ProjectReference Include="..\RifaBox.Domain\RifaBox.Domain.csproj"/>
-    <!-- <ProjectReference Include="..\RifaBox.Infra\RifaBox.Infra.csproj" />-->
+    <!--<ProjectReference Include="..\RifaBox.Infra\RifaBox.Infra.csproj" />-->
   </ItemGroup>
 
 </Project>

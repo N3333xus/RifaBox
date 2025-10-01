@@ -3,7 +3,7 @@ namespace RifaBox.Domain.Entities;
 public class User
 {
     public Guid Id { get; set; }
-    public string Name { get; set; }
+    public string UserName { get; set; }
     public string Email { get; set; }
     //public string PasswordHash { get; set; }
     public int Role { get; set; } // ADMIN, MODERADOR, organizadorSorteio, ParticipanteSorteio
@@ -12,10 +12,10 @@ public class User
 
     private User() { }
 
-    public User(string name, string email/*, string passwordHash*/)
+    public User(string userName, string email/*, string passwordHash*/)
     {
         Id = Guid.NewGuid();
-        Name = name;
+        UserName = userName;
         Email = email;
         //PasswordHash = passwordHash;
         IsActive = true;
@@ -28,9 +28,9 @@ public class User
         PasswordHash = newPasswordHash;
     }*/
 
-    public void UpdateProfile(string newName, string newEmail)
+    public void UpdateProfile(string newUserName, string newEmail)
     {
-        Name = newName;
+        UserName = newUserName;
         Email = newEmail;
     }
 

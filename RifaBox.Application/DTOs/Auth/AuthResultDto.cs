@@ -12,13 +12,13 @@ namespace RifaBox.Application.DTOs.Auth
         //public DateTime TokenExpiry { get; set; } ver se faz sentido implementação!
         public string ErrorMessage { get; set; }
 
-        public static AuthResultDto AuthSuccess(string token, string refreshtoken, Guid userId, string userName, string email)
+        public static AuthResultDto AuthSuccess(string token, string refreshToken, Guid userId, string userName, string email)
         {
             return new AuthResultDto
             {
                 Success = true,
                 Token = token,
-                RefreshToken = refreshtoken,
+                RefreshToken = refreshToken,
                 UserId = userId,
                 UserName = userName,
                 Email = email,

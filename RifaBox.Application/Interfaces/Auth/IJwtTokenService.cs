@@ -1,6 +1,7 @@
 using RifaBox.Application.DTOs.Auth;
+using System.Security.Claims;
 
-namespace RifaBox.Application.Interfaces
+namespace RifaBox.Application.Interfaces.Auth
 {
     public interface IJwtTokenService
     {

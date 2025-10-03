@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using RifaBox.Domain.Enums;
 
@@ -17,15 +18,35 @@ namespace RifaBox.Domain.Entities
 
         private Ticket() { }
 
-        public Ticket(int number, int raffleId)
+        public Ticket(int number, int version)
+        {
+            Id = Guid.NewGuid();
+            Number = number;
+            Status = ETicketStatus.DISPONIVEL;
+            Version = version;
+
+        }
+
+        public Guid Reservar(Guid userId)
+        {
+
+        }
+
+        public Guid ConfirmarCompra(Guid userId)
+        {
+
+        }
+
+        public void CancelarReserva()
+        {
+
+        }
+
+        public void Sortear()
         {
 
         }
     }
 
-
-    // metodo para declarar se havera rifas limitadas ou ilimitadas
-    // metodo para declarar a quantidade de rifas disponiveis
-    // metodo que marca numeros que foram vendidos
 
 }

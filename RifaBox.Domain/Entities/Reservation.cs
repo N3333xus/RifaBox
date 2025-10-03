@@ -16,12 +16,38 @@ namespace RifaBox.Domain.Entities
         public DateTime CreatedAt { get; set; }
         public bool IsConfirmed { get; set; } // p simular pagamento
         public DateTime? ConfirmedAt { get; set; }
-        
-        /*
-        adicionarticket
-        confirmar
-        cancelar
-        verificarexpiracao
-        */
+
+        private Reservation() { }
+
+        public Reservation()
+        {
+
+        }
+
+        public void AdicionarTicketAReserva(Ticket ticket)
+        {
+
+        }
+
+        public void RemoverTicketDaReserva(Ticket ticket)
+        {
+
+        }
+
+        public void ConfirmarReserva()
+        {
+            // confirma reserva, mudando sey status
+        }
+
+        public void CancelarReserva()
+        {
+            // vai cancelar a reserva, e libera os tickets
+        }
+
+        public void VerificarExpiracaoDeReserva()
+        {
+            // vai verificar se a reserva expirou e a cancela automaticamnte
+        }
+
     }
 }

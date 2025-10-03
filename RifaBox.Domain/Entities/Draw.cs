@@ -14,11 +14,28 @@ namespace RifaBox.Domain.Entities
         public string Winners { get; set; } // lista com guid fk??
         public DateTime CreatedAt { get; set; }
 
-        /*
-        
-        executar sorteio
-        registarvencedor
-        validarresultado
-        */
+        private Draw() { }
+
+        public Draw()
+        {
+
+        }
+
+        public void ExecutarSorteio()
+        {
+
+        }
+
+        public void RegistarTickeDotVencedor(Ticket ticket)
+        {
+
+        }
+
+        public void ValidarResultadoDoSorteio(string seed)
+        {
+
+
+        }
+
     }
 }

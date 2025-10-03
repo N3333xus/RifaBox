@@ -27,24 +27,24 @@ namespace RifaBox.Domain.Entities
 
         }
 
-        public Guid Reservar(Guid userId)
+        public Guid MakeReservation(Guid userId)
         {
-
+            // deve reservar o ticket para um usuário
         }
 
-        public Guid ConfirmarCompra(Guid userId)
+        public Guid ConfirmPurchase(Guid userId)
         {
-
+            // deve confirmar a compra do ticket pelo usuário
         }
 
-        public void CancelarReserva()
+        public void CancelReservation()
         {
-
+            // cancela a reserva do ticket
         }
 
-        public void Sortear()
+        public void MarkTicketAsDraw()
         {
-
+            // p marcar o ricket como sorteado (vencedor)
         }
     }
 

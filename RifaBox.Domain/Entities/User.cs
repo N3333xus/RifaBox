@@ -23,7 +23,7 @@ public class User
 
     }
 
-    /*public void UpdatePassword(string newPasswordHash)
+    /*public void UpdatePassword(string newPasswordHash) 
     {
         PasswordHash = newPasswordHash;
     }*/

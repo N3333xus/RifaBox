@@ -44,10 +44,17 @@ namespace RifaBox.Domain.Entities
         }
 
         /*
-        IniciarSorteio(seed, algoritmo) → cria um Draw.
-        AdicionarImagem(RaffleImage)
-        GerarBilhetes(totalTickets) ou AdicionarBilhete(Ticket)
-        AlterarPreco(decimal novoValor) (restrição: só se estiver em draft).
+    AdicionarTicket(Ticket ticket): Adiciona um ticket à rifa.
+
+    RemoverTicket(Ticket ticket): Remove um ticket da rifa.
+
+    IniciarSorteio(): Muda o status da rifa para "Em Sorteio".
+
+    FinalizarSorteio(): Finaliza o sorteio da rifa.
+
+    CancelarRifa(): Cancela a rifa.
+
+    AdicionarPremio(string premio): Adiciona um prêmio à rifa (se houver múltiplos prêmios).
         */
     }
 }

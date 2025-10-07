@@ -11,8 +11,8 @@ namespace RifaBox.Domain.Entities
     {
         public Guid Id { get; set; }
         public int Number { get; set; }
-        public int RaffleId { get; set; } // fk para raffle, ou usar guid??
-        public ETicketStatus Status { get; set; }
+        public int RaffleId { get; set; }
+        public ETicketStatus TicketStatus { get; set; }
         public int OwnerId { get; set; } // fk para USUARIO COMPRADOR, pode ser nulo?
         public int Version { get; set; }
 
@@ -22,7 +22,7 @@ namespace RifaBox.Domain.Entities
         {
             Id = Guid.NewGuid();
             Number = number;
-            Status = ETicketStatus.DISPONIVEL;
+            TicketStatus = ETicketStatus.DISPONIVEL;
             Version = version;
 
         }
@@ -39,12 +39,12 @@ namespace RifaBox.Domain.Entities
 
         public void CancelReservation()
         {
-            // cancela a reserva do ticket
+            TicketStatus = ETicketStatus.CANCELADA;
         }
 
         public void MarkTicketAsDraw()
         {
-            // p marcar o ricket como sorteado (vencedor)
+            TicketStatus = ETicketStatus.SORTEADO;
         }
     }
 

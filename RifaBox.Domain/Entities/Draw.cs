@@ -9,16 +9,18 @@ namespace RifaBox.Domain.Entities
     {
         public Guid Id { get; set; }
         public int RaffleId { get; set; } // ou guid?
-        public string Seed { get; set; }
+        public string Seed { get; set; } // depois implementar algoritmo para gerar seed e seedhash
         public string Algorithm { get; set; }
-        public string Winners { get; set; } // lista com guid fk??
+        public List<Guid> WinnersList { get; set; }
         public DateTime CreatedAt { get; set; }
 
         private Draw() { }
 
         public Draw()
         {
+            Id = Guid.NewGuid();
 
+            CreatedAt = DateTime.UtcNow;
         }
 
         public void ExecutarSorteio()
@@ -36,6 +38,5 @@ namespace RifaBox.Domain.Entities
 
 
         }
-
     }
 }

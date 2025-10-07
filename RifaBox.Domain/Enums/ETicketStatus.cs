@@ -3,7 +3,7 @@ namespace RifaBox.Domain.Enums;
 public enum ETicketStatus
 {
     DISPONIVEL,
-    MANTIDA,
+    SORTEADO,
     VENDIDA,
     CANCELADA
 }

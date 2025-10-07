@@ -14,7 +14,7 @@ namespace RifaBox.Domain.Entities
         public DateTime ExpiresAt { get; set; }
         public EReservationStatus Status { get; set; }
         public DateTime CreatedAt { get; set; }
-        public bool IsConfirmed { get; set; } // p simular pagamento
+        public bool IsPaymentConfirmed { get; set; } // p simular pagamento
         public DateTime? ConfirmedAt { get; set; }
 
         private Reservation() { }
@@ -34,12 +34,12 @@ namespace RifaBox.Domain.Entities
 
         }
 
-        public void ConfirmarReserva()
+        public void ConfirmReservation()
         {
             // confirma reserva, mudando sey status
         }
 
-        public void CancelarReserva()
+        public void CancelReservation()
         {
             // vai cancelar a reserva, e libera os tickets
         }
